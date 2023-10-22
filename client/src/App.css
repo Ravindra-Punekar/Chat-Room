@@ -94,13 +94,14 @@ body {
   height: auto;
   padding: 10px;
   display: flex;
+  /* flex-direction: row-reverse; */
 }
 
 .chat-window .chat-body .message .message-content {
   width: auto;
   height: auto;
   min-height: 40px;
-  max-width: 120px;
+  max-width: 140px;
   background-color: #43a047;
   border-radius: 5px;
   color: white;
@@ -114,29 +115,30 @@ body {
   word-break: break-word;
 }
 
-#you {
-  justify-content: flex-start;
-}
-
-#you .message-content {
-  justify-content: flex-start;
-}
-
-#you .message-meta {
-  justify-content: flex-start;
-  margin-left: 5px;
-}
-
 #other {
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 #other .message-content {
-  justify-content: flex-end;
+  justify-content: flex-start;
   background-color: cornflowerblue;
 }
 
 #other .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#you {
+  justify-content: flex-end;
+}
+
+#you .message-content {
+  justify-content: flex-end;
+  background-color: #2e7d32;
+}
+
+#you .message-meta {
   justify-content: flex-end;
   margin-right: 5px;
 }

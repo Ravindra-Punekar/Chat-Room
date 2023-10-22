@@ -1,0 +1,6 @@
+cd client
+npm start
+
+new terminal
+cd server
+npm start
